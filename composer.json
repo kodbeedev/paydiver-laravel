@@ -1,0 +1,54 @@
+{
+    "name": "kodbee/jomabee-laravel",
+    "description": "Laravel integration for the Jomabee payment API by Kodbee — facade, config, and webhook verification.",
+    "type": "library",
+    "keywords": ["jomabee", "kodbee", "laravel", "payment", "bangladesh", "bkash", "nagad", "sdk"],
+    "homepage": "https://kodbee.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kodbee",
+            "email": "support@kodbee.com",
+            "homepage": "https://kodbee.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/kodbeedev/jomabee-laravel/issues",
+        "source": "https://github.com/kodbeedev/jomabee-laravel"
+    },
+    "require": {
+        "php": ">=8.1",
+        "kodbee/jomabee-php": "^1.0",
+        "illuminate/support": "^10.0|^11.0|^12.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0|^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kodbee\\JomabeeLaravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Kodbee\\JomabeeLaravel\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Kodbee\\JomabeeLaravel\\JomabeeServiceProvider"
+            ],
+            "aliases": {
+                "Jomabee": "Kodbee\\JomabeeLaravel\\Facades\\Jomabee"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "kylekatarnls/update-helper": true
+        }
+    },
+    "minimum-stability": "stable"
+}
