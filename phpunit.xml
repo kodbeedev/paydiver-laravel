@@ -4,7 +4,7 @@
          bootstrap="vendor/autoload.php"
          colors="true">
     <testsuites>
-        <testsuite name="Jomabee Laravel">
+        <testsuite name="Paydiver Laravel">
             <directory>tests</directory>
         </testsuite>
     </testsuites>

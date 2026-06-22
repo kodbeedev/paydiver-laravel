@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Kodbee\JomabeeLaravel\Facades;
+namespace Kodbee\PaydiverLaravel\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -13,12 +13,12 @@ use Illuminate\Support\Facades\Facade;
  * @method static array transactions(array $query = [])
  * @method static array balance()
  *
- * @see \Kodbee\Jomabee\Jomabee
+ * @see \Kodbee\Paydiver\Paydiver
  */
-final class Jomabee extends Facade
+final class Paydiver extends Facade
 {
     protected static function getFacadeAccessor(): string
     {
-        return 'jomabee';
+        return 'paydiver';
     }
 }
